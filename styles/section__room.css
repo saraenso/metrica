@@ -1,0 +1,27 @@
+.section__room {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1400px;
+    background-image: url('../resources/roomforestview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.room__container {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    height: 717px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.room-dsc {
+    position: absolute;
+    bottom: 60px;
+    width: 443px;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}

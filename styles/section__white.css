@@ -1,0 +1,51 @@
+.section__white {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.contacts__container {
+    margin-top: 186px;
+    margin-left: 124px;
+}
+
+.contacts-caption {
+    position: relative;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.contacts-caption::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../resources/icon.png');
+    background-size: contain;
+    width: 13px;
+    height: 22px;
+    bottom: 37px;
+}
+
+.tel {
+    margin-bottom: 28px;
+}
+
+.tel-link {
+    font-size: 60px;
+    line-height: 60px;
+    color: #121212;
+    text-decoration: none;
+}
+
+.email {
+    margin-bottom: 160px;
+}
+
+.email-link {
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    border-bottom: 2px solid #121212;
+    opacity: 0.5;
+    color: #121212;
+}
