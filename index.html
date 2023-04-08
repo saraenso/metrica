@@ -185,7 +185,9 @@
                 class="service-img"
                 alt="Склад и полки с крупным товаром в коробках"
               />
-              <p class="section-services__service-item__dsc_narrow">Комплектация</p>
+              <p class="section-services__service-item__dsc_narrow">
+                Комплектация
+              </p>
               <div class="section-services__service-item__price-label">
                 <a href="" class="section-services__service-item__price"
                   >5% от стоимости</a
@@ -259,28 +261,84 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="section-gallery">
-        <div class="container">
-          <div class="gallery">
-            <h4 class="gallery__title">Галерея проектов</h4>
-            <ul class="gallery__slides">
-              <li class="gallery__slide">
-                <div class="gallery__slide-box"></div>
-              </li>
-              <li class="gallery__slide">
-                <div class="gallery__slide-box"></div>
-              </li>
-              <li class="gallery__slide">
-                <div class="gallery__slide-box"></div>
-              </li>
-              <li class="gallery__slide">
-                <div class="gallery__slide-box"></div>
-              </li>
-            </ul>
-            <div class="gallery__controls">
-              <button class="gallery__control-prev"> < </button>
-              <button class="gallery__control-next"> > </button>
+        <div class="gallery">
+          <div class="gallery__title-wrapper">
+            <div class="container">
+              <h4 class="gallery__title">Галерея проектов</h4>
+            </div>
+          </div>
+          <ul class="gallery__slides">
+            <li class="gallery__slide gallery__slide_active">
+              <div class="gallery__slide-dsc-wrapper">
+                <div class="container">
+                  <p class="gallery__slide-dsc">
+                    Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__slide-box">
+                <img
+                  src="resources/forest-view.png"
+                  alt="Спальня проекта ЖК Лесной Пейзаж"
+                  class="gallery__slide-img"
+                />
+              </div>
+            </li>
+            <li class="gallery__slide">
+              <div class="gallery__slide-dsc-wrapper">
+                <div class="container">
+                  <p class="gallery__slide-dsc">Проект гостиной в ЖК Маяк</p>
+                </div>
+              </div>
+              <div class="gallery__slide-box">
+                <img
+                  src="resources/lighthouse.png"
+                  alt="Интерьер гостевой проекта ЖК Маяк"
+                  class="gallery__slide-img"
+                />
+              </div>
+            </li>
+            <li class="gallery__slide">
+              <div class="gallery__slide-dsc-wrapper">
+                <div class="container">
+                  <p class="gallery__slide-dsc">
+                    Визуализация кухни-гостиной в частном доме
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__slide-box">
+                <img
+                  src="resources/private-house.png"
+                  alt="Светлый интерьер гостевой в частном доме"
+                  class="gallery__slide-img"
+                />
+              </div>
+            </li>
+            <li class="gallery__slide">
+              <div class="gallery__slide-dsc-wrapper">
+                <div class="container">
+                  <p class="gallery__slide-dsc">
+                    Проект кухни в скандинавском стиле для ЖК Северный Ветер
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__slide-box">
+                <img
+                  src="resources/northern-wind.png"
+                  alt="Интерьер кухни ЖК Северный Ветер"
+                  class="gallery__slide-img"
+                />
+              </div>
+            </li>
+          </ul>
+          <div class="gallery__controls-wrapper">
+            <div class="container">
+              <div class="gallery__controls">
+                <button class="gallery__control-prev"></button>
+                <button class="gallery__control-next"></button>
+              </div>
             </div>
           </div>
         </div>
@@ -319,5 +377,6 @@
         <p class="end">студия дизайна интерьера Метрика — 2023</p>
     </footer>
      -->
+     <script src="gallery.js"></script>
   </body>
 </html>
