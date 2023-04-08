@@ -1,0 +1,116 @@
+.section-contacts {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.contacts_title {
+    margin-bottom: 74px;
+}
+
+.section-contacts__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 104px;
+}
+
+.tel-link {
+    position: relative;
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #121212;
+}
+
+.tel-link:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    background-image: url('../resources/tel-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.email-link {
+    position: relative;
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    border-bottom: 2px solid #121212;
+    color: #121212;
+    opacity: 0.5;
+}
+
+.email-link:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: -29px;
+    background-image: url('../resources/email-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1199px) {
+    .section-contacts {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    
+    .section-contacts__row {
+        gap: 114px;
+    }
+    
+    .tel-link {
+        font-size: 45px;
+    }
+    
+    .email-link {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-contacts {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .contacts_title {
+        margin-bottom: 58px;
+    }
+    
+    .section-contacts__row {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+    }
+    
+    .tel-link {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    
+    .tel-link:before {
+        width: 18px;
+        height: 18px;
+        top: -35px;
+    }
+    
+    .email-link {
+        font-size: 35px;
+        line-height: 46px;
+        opacity: 1;
+        border-bottom: unset;
+    }
+    
+    .email-link:before {
+        width: 18px;
+        height: 18px;
+        top: -34px;
+    }
+}
