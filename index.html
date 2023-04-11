@@ -8,7 +8,7 @@
     <title>Метрика</title>
 
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" /> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +17,58 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!--  
+  <body> 
     <header>
-        <div class="nav__container">
-            <a href="" class="logo__link">
-                <img src="resources/logo.png" alt="Логотип" class="logo">
-            </a>
-            <div class="nav">
-                <a href="#about_us" class="nav__link">О НАС</a>
-                <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
-                <a href="#services" class="nav__link">УСЛУГИ</a>
-                <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
-            </div>
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="" class="logo-link">
+            <img
+              src="resources/logo.png"
+              alt="Логотип студии Метрика"
+              class="logo-img"
+            />
+          </a>
+          <nav class="header-nav">
+            <a href="#about-us" class="header-nav__link">О нас</a>
+            <a href="#projects" class="header-nav__link">Проекты</a>
+            <a href="#services" class="header-nav__link">Услуги</a>
+            <a href="#contacts" class="header-nav__link">Контакты</a>
+          </nav>
+          <div class="js-burger-btn burger-btn"></div>
         </div>
+      </div>
+
+      <div class="js-burger burger">
+        <div class="js-burger__content burger__content">
+          <div class="burger-inner">
+            <a href="resources/logo.png" class="burger__logo">
+              <img
+                src="resources/logo.png"
+                alt="Логотип студии Метрика"
+                class="burger__logo-img"
+              />
+            </a>
+            <nav class="burger-nav">
+              <a href="#about-us" class="burger-nav__link">О нас</a>
+              <a href="#projects" class="burger-nav__link">Проекты</a>
+              <a href="#services" class="burger-nav__link">Услуги</a>
+              <a href="#contacts" class="burger-nav__link">Контакты</a>
+            </nav>
+            <p class="burger__for-contact">для связи:</p>
+            <ul class="burger__row">
+              <li class="burger__tel">
+                <a href="tel:+79358954535" class="burger__tel-link"
+                  >+7 935&nbsp&nbsp895-45-35</a
+                >
+              </li>
+              <li class="burger__email">
+                <a href="https://t.me/saraenso" class="burger__email-link">@saraenso</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
--->
     <main>
       <section class="section-about-us">
         <div class="container">
@@ -44,7 +80,7 @@
             </p>
           </div>
 
-          <h2>О нас</h2>
+          <h2 id="about-us">О нас</h2>
           <p class="section-about-us__dsc">
             Студия основана в 2011 году. Полностью отдаемся проектированию и
             реализации интерьеров. К нам обращаются за уютом, индивидуальными
@@ -60,7 +96,7 @@
         </div>
       </section>
 
-      <section class="section-projects">
+      <section id="projects" class="section-projects">
         <div class="container">
           <h2>Проекты</h2>
           <ul class="section-projects__projects-list">
@@ -134,7 +170,7 @@
 
       <section class="section-services">
         <div class="container">
-          <h2 class="section-services__title">Услуги</h2>
+          <h2 id="services" class="section-services__title">Услуги</h2>
           <ul class="section-services__services-list">
             <li class="section-services__service-item">
               <img
@@ -199,12 +235,28 @@
           <div class="section-services__popup js-popup">
             <div class="section-services__popup-content js-popup__content">
               <p class="section-services__popup-title">Заказать услугу</p>
-              <p class="section-services__popup-dsc">Заполните форму, мы свяжемся с вами в течение суток</p>
-              <input type="text" class="section-services__input" placeholder="Имя">
-              <input type="email" class="section-services__input" placeholder="Электронная почта">
-              <input type="number" class="section-services__input" placeholder="Номер телефона">
+              <p class="section-services__popup-dsc">
+                Заполните форму, мы свяжемся с вами в течение суток
+              </p>
+              <input
+                type="text"
+                class="section-services__input"
+                placeholder="Имя"
+              />
+              <input
+                type="email"
+                class="section-services__input"
+                placeholder="Электронная почта"
+              />
+              <input
+                type="number"
+                class="section-services__input"
+                placeholder="Номер телефона"
+              />
               <a href="" class="section-services__form-submit-btn">Отправить</a>
-              <button class="section-services__popup_close js-popup__close-btn"></button>
+              <button
+                class="section-services__popup_close js-popup__close-btn"
+              ></button>
             </div>
           </div>
         </div>
@@ -357,7 +409,7 @@
 
       <section class="section-contacts">
         <div class="container">
-          <h2 class="contacts_title">Контакты</h2>
+          <h2 id="contacts" class="contacts_title">Контакты</h2>
           <ul class="section-contacts__row">
             <li class="section-contacts__tel">
               <a href="tel:+79358954535" class="tel-link"
@@ -365,9 +417,7 @@
               >
             </li>
             <li class="section-contacts__email">
-              <a href="mailto:hello@mail.com" class="email-link"
-                >hello@mail.com</a
-              >
+              <a href="https://t.me/saraenso" class="email-link">@saraenso</a>
             </li>
           </ul>
         </div>
@@ -378,15 +428,16 @@
       <div class="container">
         <div class="footer-inner">
           <nav class="footer__nav">
-            <a href="" class="footer__nav-link">О нас</a>
-            <a href="" class="footer__nav-link">Проекты</a>
-            <a href="" class="footer__nav-link">Услуги</a>
-            <a href="" class="footer__nav-link">Контакты</a>
+            <a href="#about-us" class="footer__nav-link">О нас</a>
+            <a href="#projects" class="footer__nav-link">Проекты</a>
+            <a href="#services" class="footer__nav-link">Услуги</a>
+            <a href="#contacts" class="footer__nav-link">Контакты</a>
           </nav>
         </div>
         <p class="rights">студия дизайна интерьера Метрика — 2023</p>
       </div>
     </footer>
+    <script src="burger.js"></script>
     <script src="popup.js"></script>
     <script src="gallery.js"></script>
   </body>
