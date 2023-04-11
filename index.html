@@ -195,7 +195,18 @@
               </div>
             </li>
           </ul>
-          <a href="" class="section-services__link">Заказать услугу</a>
+          <a class="section-services__link js-btn">Заказать услугу</a>
+          <div class="section-services__popup js-popup">
+            <div class="section-services__popup-content js-popup__content">
+              <p class="section-services__popup-title">Заказать услугу</p>
+              <p class="section-services__popup-dsc">Заполните форму, мы свяжемся с вами в течение суток</p>
+              <input type="text" class="section-services__input" placeholder="Имя">
+              <input type="email" class="section-services__input" placeholder="Электронная почта">
+              <input type="number" class="section-services__input" placeholder="Номер телефона">
+              <a href="" class="section-services__form-submit-btn">Отправить</a>
+              <button class="section-services__popup_close js-popup__close-btn"></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -376,6 +387,7 @@
         <p class="rights">студия дизайна интерьера Метрика — 2023</p>
       </div>
     </footer>
+    <script src="popup.js"></script>
     <script src="gallery.js"></script>
   </body>
 </html>
