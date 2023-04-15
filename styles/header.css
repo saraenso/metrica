@@ -165,20 +165,29 @@
 }
 
 @media (max-width: 767px) {
+    .header-wrapper {
+        padding-bottom: 52px;
+    }
+    
+    .logo-img {
+        width: 96px;
+        height: 16px;
+    }
+
     .burger-btn {
-        top: -2px;
+        top: -3px;
         width: 30px;
         height: 25px;
     }
 
     .burger-btn__line {
-        top: 11px;
+        top: 9px;
         width: 38px;
         height: 1.52px;
     }
 
     .burger-btn__line::after {
-        top: 6.52px;
+        top: 5px;
         width: 24px;
         height: 1.52px;
     }

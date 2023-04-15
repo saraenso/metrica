@@ -204,8 +204,8 @@
     }
     
     .section-services__services-list {
-        row-gap: 65px;
-        padding-bottom: 67px;
+        row-gap: 60px;
+        padding-bottom: 57px;
     }
     
     .section-services__service-item {
@@ -223,7 +223,7 @@
     }
     
     .section-services__service-item__dsc_narrow {
-        padding-top: 10px;
+        padding-top: 8px;
         font-size: 18px;
         line-height: 25px;
     }
