@@ -9,8 +9,17 @@
 
 .section-contacts__row {
     display: flex;
-    flex-wrap: wrap;
     gap: 104px;
+}
+
+.section-contacts__tel {
+    display: block;
+    width: 100%;
+}
+
+.section-contacts__email {
+    display: block;
+    width: 100%;
 }
 
 .tel-link {
@@ -60,7 +69,7 @@
         padding-top: 120px;
         padding-bottom: 80px;
     }
-    
+
     .section-contacts__row {
         gap: 114px;
     }
