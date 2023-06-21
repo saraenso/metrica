@@ -38,6 +38,11 @@
     line-height: 41px;
 }
 
+.calculator-option-txt {
+    font-size: 30px;
+    line-height: 41px;
+}
+
 .property-selection {
     width: 170px;
     font-family: 'Manrope';
@@ -123,6 +128,7 @@
     font-size: 30px;
     line-height: 41px;
     color: #AD1818;
+    cursor: pointer;
 }
 
 .composition-counter__number {
@@ -152,10 +158,19 @@
 }
 
 .calculator-service__checkbox {
+    display: none;
     align-self: center;
     width: 22.3px;
     height: 20.3px;
     cursor: pointer;
+}
+
+.calculator-service.clicked {
+    border: 1px solid #AD1818;
+  }
+  
+.calculator-service.clicked .calculator-option-txt {
+    color: #AD1818;
 }
 
 .calculator-inner-composition__title_margin {
@@ -209,14 +224,9 @@
     color: #AD1818;
 }
 
-.calculator-summary-wrapper {
-    
-}
-
 .calculator-summary {
     position: sticky;
     top: 10px;
-    max-height: 410px;
     width: 280px;
     padding: 30px 24px;
     background: #F6F6F6;
@@ -231,7 +241,7 @@
 
 .calculator-summary__price {
     margin-bottom: 5px;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 60px;
 }
 
@@ -258,7 +268,12 @@
 }
 
 .calculator-summary__submit-text {
+    font-family: 'Manrope';
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+label {
+    cursor: pointer;
 }

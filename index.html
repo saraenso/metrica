@@ -355,18 +355,27 @@
                   <p class="calculator-option">укажите метраж помещения</p>
                 </div>
                 <div class="calculator-inner__col">
-                  <select class="property-selection">
+                  <select class="js-property-selection property-selection">
                     <option value="квартира">квартира</option>
                     <option value="дом">дом</option>
                     <option value="офис">офис</option>
                   </select>
                   <div class="area-range">
-                    <div class="area-range__inner">
-                      <output class="area-range__number" for="range">0</output>
-                      <label class="area-range__sqm" for="range"> м2 </label>
+                    <div class="js-area-range__inner area-range__inner">
+                      <output
+                        class="js-area-range__number area-range__number"
+                        for="range"
+                        >44</output
+                      >
+                      <label
+                        class="js-area-range__sqm area-range__sqm"
+                        for="range"
+                      >
+                        м&#x00B2
+                      </label>
                     </div>
                     <input
-                      class="area-range__carousel"
+                      class="js-area-range__carousel area-range__carousel"
                       type="range"
                       name="range"
                     />
@@ -378,7 +387,6 @@
                 <p class="calculator-inner-composition__title">
                   состав дизайн-проекта
                 </p>
-
                 <div class="calculator-inner-composition__wrapper-width">
                   <div class="calculator-inner__col">
                     <p class="calculator-option">планировочные решения</p>
@@ -387,19 +395,55 @@
                   </div>
                   <div class="calculator-inner__col">
                     <div class="composition-counter">
-                      <button class="composition-counter__btn">-</button>
-                      <p class="composition-counter__number">0</p>
-                      <button class="composition-counter__btn">+</button>
+                      <button
+                        class="js-composition-counter__minus-btn1 composition-counter__btn"
+                      >
+                        -
+                      </button>
+                      <p
+                        class="js-composition-counter__number1 composition-counter__number"
+                      >
+                        0
+                      </p>
+                      <button
+                        class="js-composition-counter__plus-btn1 composition-counter__btn"
+                      >
+                        +
+                      </button>
                     </div>
                     <div class="composition-counter">
-                      <button class="composition-counter__btn">-</button>
-                      <p class="composition-counter__number">0</p>
-                      <button class="composition-counter__btn">+</button>
+                      <button
+                        class="js-composition-counter__minus-btn2 composition-counter__btn"
+                      >
+                        -
+                      </button>
+                      <p
+                        class="js-composition-counter__number2 composition-counter__number"
+                      >
+                        0
+                      </p>
+                      <button
+                        class="js-composition-counter__plus-btn2 composition-counter__btn"
+                      >
+                        +
+                      </button>
                     </div>
                     <div class="composition-counter">
-                      <button class="composition-counter__btn">-</button>
-                      <p class="composition-counter__number">0</p>
-                      <button class="composition-counter__btn">+</button>
+                      <button
+                        class="js-composition-counter__minus-btn3 composition-counter__btn"
+                      >
+                        -
+                      </button>
+                      <p
+                        class="js-composition-counter__number3 composition-counter__number"
+                      >
+                        0
+                      </p>
+                      <button
+                        class="js-composition-counter__plus-btn3 composition-counter__btn"
+                      >
+                        +
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -412,92 +456,114 @@
                 <div class="calculator-inner-composition__wrapper">
                   <div class="calculator-inner__col">
                     <ul class="calculator-services">
-                      <li class="calculator-service" name="calculator-service">
+                      <li
+                        class="js-calculator-service1 calculator-service"
+                        name="calculator-service"
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
                         >
-                          <p class="calculator-option">3D визуализация</p>
+                          <p class="calculator-option-txt">3D визуализация</p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox1 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                           />
                         </label>
                       </li>
-                      <li class="calculator-service">
+                      <li
+                        class="js-calculator-service2 calculator-service"
+                        name="calculator-service"
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
                         >
-                          <p class="calculator-option">
+                          <p class="calculator-option-txt">
                             чертежи (рабочая документация)
                           </p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox2 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                           />
                         </label>
                       </li>
-                      <li class="calculator-service">
+                      <li
+                        class="js-calculator-service3 calculator-service"
+                        name="calculator-service"
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
-                          ><p class="calculator-option">
+                          ><p class="calculator-option-txt">
                             планировочное решение
                           </p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox3 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                         /></label>
                       </li>
-                      <li class="calculator-service">
+                      <li
+                        class="js-calculator-service4 calculator-service"
+                        name="calculator-service"
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
-                          ><p class="calculator-option">
+                          ><p class="calculator-option-txt">
                             ведомости (шопинг-лист)
                           </p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox4 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                         /></label>
                       </li>
-                      <li class="calculator-service">
+                      <li
+                        class="js-calculator-service5 calculator-service"
+                        name="calculator-service"
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
                         >
-                          <p class="calculator-option">товары со скидкой</p>
+                          <p class="calculator-option-txt">товары со скидкой</p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox5 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                         /></label>
                       </li>
-                      <li class="calculator-service">
+                      <li
+                        class="js-calculator-service6 calculator-service"
+                        name="calculator-service"
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
                         >
-                          <p class="calculator-option">смета на ремонт</p>
+                          <p class="calculator-option-txt">смета на ремонт</p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox6 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                           />
                         </label>
                       </li>
-                      <li class="calculator-service">
+                      <li
+                        class="js-calculator-service7 calculator-service"
+                        name="calculator-service"
+                        a
+                      >
                         <label
                           class="calculator-service__label"
                           for="calculator-service"
-                          ><p class="calculator-option">мебель на заказ</p>
+                          ><p class="calculator-option-txt">мебель на заказ</p>
                           <img
-                            class="calculator-service__checkbox"
+                            class="js-calculator-service__checkbox7 calculator-service__checkbox"
                             src="resources/service-checkbox.png"
                             alt="Красная галочка"
                         /></label>
@@ -506,6 +572,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="calculator-inner-composition">
                 <p
                   class="calculator-inner-composition__title calculator-inner-composition__title_margin"
@@ -613,12 +680,13 @@
                   </div>
                 </div>
               </div>
+
             </div>
             <div class="calculator-summary-wrapper">
               <div class="calculator-summary">
                 <p class="calculator-summary__title">стоимость проекта</p>
-                <p class="calculator-summary__price">0 ₽</p>
-                <p class="calculator-summary__per-sq">1000 ₽/м2</p>
+                <p class="js-calculator-summary__price calculator-summary__price">0 ₽</p>
+                <p class="calculator-summary__per-sq">1000 ₽/м&#x00B2</p>
                 <p class="calculator-summary__days">35-45 дней</p>
                 <button class="calculator-summary__submit">
                   <p class="calculator-summary__submit-text">Заказать проект</p>
@@ -808,6 +876,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/calculator.js"></script>
     <script src="js/gallery.js"></script>
   </body>
 </html>
