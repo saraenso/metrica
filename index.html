@@ -8,31 +8,86 @@
     <title>Метрика</title>
 
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" /> 
+    <link rel="stylesheet" href="styles/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="resources/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="resources/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="resources/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="resources/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="resources/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="resources/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="resources/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="resources/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="resources/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="resources/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="resources/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon-16x16.png">
-
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="resources/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="resources/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="resources/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="resources/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="resources/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="resources/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="resources/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="resources/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="resources/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="resources/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicon-16x16.png"
+    />
   </head>
-  <body> 
+  <body>
     <header>
       <div class="container">
         <div class="header-wrapper">
@@ -79,7 +134,12 @@
                 >
               </li>
               <li class="burger__email">
-                <a href="https://t.me/saraenso" target="_blank" class="burger__email-link">@saraenso</a>
+                <a
+                  href="https://t.me/saraenso"
+                  target="_blank"
+                  class="burger__email-link"
+                  >@saraenso</a
+                >
               </li>
             </ul>
           </div>
@@ -283,6 +343,360 @@
         </div>
       </section>
 
+      <section class="section-calcucator">
+        <div class="container">
+          <h2 class="calculator-title">Калькулятор стоимости ремонта</h2>
+
+          <div class="calculator">
+            <div class="calculator-wrapper">
+              <div class="calculator-inner">
+                <div class="calculator-inner__col">
+                  <p class="calculator-option">выберите тип помещения</p>
+                  <p class="calculator-option">укажите метраж помещения</p>
+                </div>
+                <div class="calculator-inner__col">
+                  <select class="js-property-selection property-selection">
+                    <option value="квартира">квартира</option>
+                    <option value="дом">дом</option>
+                    <option value="офис">офис</option>
+                  </select>
+                  <div class="area-range">
+                    <div class="js-area-range__inner area-range__inner">
+                      <output
+                        class="js-area-range__number area-range__number"
+                        for="range"
+                        >44</output
+                      >
+                      <label
+                        class="js-area-range__sqm area-range__sqm"
+                        for="range"
+                      >
+                        м&#x00B2
+                      </label>
+                    </div>
+                    <input
+                      class="js-area-range__carousel area-range__carousel"
+                      type="range"
+                      name="range"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="calculator-inner-composition">
+                <p class="calculator-inner-composition__title">
+                  состав дизайн-проекта
+                </p>
+                <div class="calculator-inner-composition__wrapper-width">
+                  <div class="calculator-inner__col">
+                    <p class="calculator-option">планировочные решения</p>
+                    <p class="calculator-option">варианты чертежей</p>
+                    <p class="calculator-option">варианты визуализаций</p>
+                  </div>
+                  <div class="calculator-inner__col">
+                    <div class="composition-counter">
+                      <button
+                        class="js-composition-counter__minus-btn1 composition-counter__btn"
+                      >
+                        -
+                      </button>
+                      <p
+                        class="js-composition-counter__number1 composition-counter__number"
+                      >
+                        0
+                      </p>
+                      <button
+                        class="js-composition-counter__plus-btn1 composition-counter__btn"
+                      >
+                        +
+                      </button>
+                    </div>
+                    <div class="composition-counter">
+                      <button
+                        class="js-composition-counter__minus-btn2 composition-counter__btn"
+                      >
+                        -
+                      </button>
+                      <p
+                        class="js-composition-counter__number2 composition-counter__number"
+                      >
+                        0
+                      </p>
+                      <button
+                        class="js-composition-counter__plus-btn2 composition-counter__btn"
+                      >
+                        +
+                      </button>
+                    </div>
+                    <div class="composition-counter">
+                      <button
+                        class="js-composition-counter__minus-btn3 composition-counter__btn"
+                      >
+                        -
+                      </button>
+                      <p
+                        class="js-composition-counter__number3 composition-counter__number"
+                      >
+                        0
+                      </p>
+                      <button
+                        class="js-composition-counter__plus-btn3 composition-counter__btn"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calculator-inner-composition">
+                <p class="calculator-inner-composition__title">
+                  что понадобится в дизайн проекте
+                </p>
+                <div class="calculator-inner-composition__wrapper">
+                  <div class="calculator-inner__col">
+                    <ul class="calculator-services">
+                      <li
+                        class="js-calculator-service1 calculator-service"
+                        name="calculator-service"
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                        >
+                          <p class="calculator-option-txt">3D визуализация</p>
+                          <img
+                            class="js-calculator-service__checkbox1 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                          />
+                        </label>
+                      </li>
+                      <li
+                        class="js-calculator-service2 calculator-service"
+                        name="calculator-service"
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                        >
+                          <p class="calculator-option-txt">
+                            чертежи (рабочая документация)
+                          </p>
+                          <img
+                            class="js-calculator-service__checkbox2 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                          />
+                        </label>
+                      </li>
+                      <li
+                        class="js-calculator-service3 calculator-service"
+                        name="calculator-service"
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                          ><p class="calculator-option-txt">
+                            планировочное решение
+                          </p>
+                          <img
+                            class="js-calculator-service__checkbox3 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                        /></label>
+                      </li>
+                      <li
+                        class="js-calculator-service4 calculator-service"
+                        name="calculator-service"
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                          ><p class="calculator-option-txt">
+                            ведомости (шопинг-лист)
+                          </p>
+                          <img
+                            class="js-calculator-service__checkbox4 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                        /></label>
+                      </li>
+                      <li
+                        class="js-calculator-service5 calculator-service"
+                        name="calculator-service"
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                        >
+                          <p class="calculator-option-txt">товары со скидкой</p>
+                          <img
+                            class="js-calculator-service__checkbox5 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                        /></label>
+                      </li>
+                      <li
+                        class="js-calculator-service6 calculator-service"
+                        name="calculator-service"
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                        >
+                          <p class="calculator-option-txt">смета на ремонт</p>
+                          <img
+                            class="js-calculator-service__checkbox6 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                          />
+                        </label>
+                      </li>
+                      <li
+                        class="js-calculator-service7 calculator-service"
+                        name="calculator-service"
+                        a
+                      >
+                        <label
+                          class="calculator-service__label"
+                          for="calculator-service"
+                          ><p class="calculator-option-txt">мебель на заказ</p>
+                          <img
+                            class="js-calculator-service__checkbox7 calculator-service__checkbox"
+                            src="resources/service-checkbox.png"
+                            alt="Красная галочка"
+                        /></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calculator-inner-composition">
+                <p
+                  class="calculator-inner-composition__title calculator-inner-composition__title_margin"
+                >
+                  дополнительные услуги
+                </p>
+                <p class="calculator-inner-composition__subtitle">
+                  оплачиваются отдельно и не входят в состав проекта
+                </p>
+                <div class="calculator-inner-composition__wrapper">
+                  <div class="calculator-inner__col">
+                    <ul class="calculator-service-list">
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >умный дом</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">30 000 ₽</p>
+                      </li>
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >технический надзор</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">20 000 ₽</p>
+                      </li>
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >авторский надзор</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">25 000 ₽</p>
+                      </li>
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >3D тур по визуализациям проекта</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">4 000 ₽</p>
+                      </li>
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >дизайн-проект дополнительного помещения</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">20 000 ₽</p>
+                      </li>
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >дизайн-проект лоджии</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">10 000 ₽</p>
+                      </li>
+                      <li class="calculator-service-item">
+                        <div class="calculator-service__option-wrapper">
+                          <input
+                            class="calculator-service__option"
+                            type="checkbox"
+                            name="service__option"
+                          />
+                          <label class="calculator-option" for="service__option"
+                            >дизайн-проект гардеробной комнаты</label
+                          >
+                        </div>
+                        <p class="calculator-service__price">10 000 ₽</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="calculator-summary-wrapper">
+              <div class="calculator-summary">
+                <p class="calculator-summary__title">стоимость проекта</p>
+                <p class="js-calculator-summary__price calculator-summary__price">0 ₽</p>
+                <p class="calculator-summary__per-sq">1000 ₽/м&#x00B2</p>
+                <p class="calculator-summary__days">35-45 дней</p>
+                <button class="calculator-summary__submit">
+                  <p class="calculator-summary__submit-text">Заказать проект</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section-review">
         <div class="container">
           <h2>Отзывы</h2>
@@ -438,7 +852,9 @@
               >
             </li>
             <li class="section-contacts__email">
-              <a href="https://t.me/saraenso" target="_blank" class="email-link">@saraenso</a>
+              <a href="https://t.me/saraenso" target="_blank" class="email-link"
+                >@saraenso</a
+              >
             </li>
           </ul>
         </div>
@@ -460,6 +876,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/calculator.js"></script>
     <script src="js/gallery.js"></script>
   </body>
 </html>
